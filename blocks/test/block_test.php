@@ -53,7 +53,7 @@ class block_test extends block_base {
 
        $resultString = '';
        foreach ($result as $cminfo) {
-        $resultString .= $cminfo->id.'&nbsp&nbsp'.$cminfo->course_module_instance->name.'&nbsp;&nbsp;'.date( "m/d/Y", strtotime($cminfo->added)).'<br>';
+        $resultString .= $cminfo->id.'&nbsp&nbsp'.$cminfo->course_module_instance->name.'&nbsp;&nbsp;'.date( "Y-m-d", $cminfo->added).'<br>';
       }
      $this->content->text = $resultString;
 
