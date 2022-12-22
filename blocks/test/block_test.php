@@ -21,7 +21,8 @@ class block_test extends block_base {
 
                      'mod' => false,
 
-                     'mod-quiz' => false);
+                     'mod-quiz' => false
+                    );
 
     }
 
